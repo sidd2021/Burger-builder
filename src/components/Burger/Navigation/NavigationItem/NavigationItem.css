@@ -1,0 +1,41 @@
+.NavigationItem a {
+  color: #8f5c2c;
+  display: block;
+  padding: 2px;
+  margin: 1rem;
+  text-decoration: none;
+  font-weight: 800;
+}
+.NavigationItem a:active,
+.NavigationItem a.active,
+.NavigationItem a:hover {
+  color: #40a4c8;
+}
+@media (min-width: 500px) {
+  .NavigationItem {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .NavigationItem a {
+    color: white;
+    height: 100%;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 16px 10px;
+    border-bottom: 4px solid transparent;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .NavigationItem a:active,
+  .NavigationItem a.active,
+  .NavigationItem a:hover {
+    background-color: #8f5c2c;
+    border-bottom: 4px solid #40c4c8;
+    color: white;
+  }
+}
